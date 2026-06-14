@@ -16,7 +16,6 @@ class ContactController extends Controller
         $validated = $request->validate([
             "name"  => "required|string|min:3",
             "email" => "required|email",
-            "password" => " | ",
         ]);
 
         return "Name: " . e($validated['name']) . " | Email: " . e($validated['email']);

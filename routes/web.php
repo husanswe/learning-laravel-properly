@@ -98,5 +98,4 @@
     
     // Laravel Request lesson. 
     Route::get('/search', [SearchController::class, 'index']);
-    Route::post('/search', [SearchController::class, 'store']);
 ?>

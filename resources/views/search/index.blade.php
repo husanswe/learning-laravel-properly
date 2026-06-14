@@ -12,10 +12,9 @@
         <div>
             <h1>This is Laravel Requests lesson. Task 1. Accessing basic input</h1>
 
-            <form method="POST" action="/search">
-                @csrf
+            <form method="GET" action="/search">
                 <div>
-                    <input type="text" name="name">
+                    <input type="text" name="query">
                 </div>
                 <div>
                     <input type="number" name="age">

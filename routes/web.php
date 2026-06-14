@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\ContactController;
-use Illuminate\Support\Facades\Route;
+    use App\Http\Controllers\ContactController;
+    use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\Controller;
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
     use App\Http\Controllers\RedirectController;
     use App\Http\Controllers\SearchController;
-
+    use App\Http\Controllers\RegisterController;
+    
     /* Route::get('/', function() {
         return view('welcome');
     });
@@ -103,4 +104,8 @@ use Illuminate\Support\Facades\Route;
     // Task 3. Contact route
     Route::get('/contact', [ContactController::class, 'contact']);
     Route::post('/contact', [ContactController::class, 'store']);
+
+    // Task 5. Get all input + only specific fields
+    Route::get('/register', [RegisterController::class, 'register']);
+    Route::post('/register', [RegisterController::class, 'submit']);
 ?>

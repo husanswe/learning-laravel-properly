@@ -5,7 +5,8 @@
     use App\Http\Controllers\Controller;
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
-    use App\Http\Controllers\RedirectController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RedirectController;
     use App\Http\Controllers\SearchController;
     use App\Http\Controllers\RegisterController;
     
@@ -108,4 +109,8 @@
     // Task 5. Get all input + only specific fields
     Route::get('/register', [RegisterController::class, 'register']);
     Route::post('/register', [RegisterController::class, 'submit']);
+
+    // Task 6 — Input as JSON with validation:
+    Route::get('/profile', [ProfileController::class, 'profile']);
+    Route::post('/profile', [ProfileController::class, 'store']);
 ?>

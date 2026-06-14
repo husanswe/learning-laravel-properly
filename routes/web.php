@@ -1,6 +1,7 @@
 <?php
 
-    use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\Controller;
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
@@ -98,4 +99,8 @@
     
     // Laravel Request lesson. 
     Route::get('/search', [SearchController::class, 'index']);
+
+    // Task 3. Contact route
+    Route::get('/contact', [ContactController::class, 'contact']);
+    Route::post('/contact', [ContactController::class, 'return']);
 ?>

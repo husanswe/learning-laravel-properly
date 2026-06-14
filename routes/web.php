@@ -102,5 +102,5 @@ use Illuminate\Support\Facades\Route;
 
     // Task 3. Contact route
     Route::get('/contact', [ContactController::class, 'contact']);
-    Route::post('/contact', [ContactController::class, 'return']);
+    Route::post('/contact', [ContactController::class, 'store']);
 ?>

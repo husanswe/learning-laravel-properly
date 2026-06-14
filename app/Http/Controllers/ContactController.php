@@ -11,12 +11,15 @@ class ContactController extends Controller
         return view('contact');
     }
 
-    public function return(Request $request)
+    public function store(Request $request)
     {
-        if ($request->filled('name') || $request->filled('email')) {
-            return "Name: " . $request->name . " | Email: " . $request->email;
-        }
+        $validated = $request->validate([
+            "name"  => "required|string|min:3",
+            "email" => "required|email",
+            "password" => " | ",
+        ]);
 
-        return "Fields must be filled!";
+        return "Name: " . e($validated['name']) . " | Email: " . e($validated['email']);
+
     }
 }

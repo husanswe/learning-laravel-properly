@@ -15,4 +15,14 @@ class ResponseController extends Controller
     {
         return view('response.view');
     }
+
+    public function redirect()
+    {
+        return redirect('/response/json');
+    }
+
+    public function download()
+    {
+        return response()->download(storage_path('app/sample.txt'));
+    }
 }

@@ -5,10 +5,12 @@
     use App\Http\Controllers\Controller;
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\RedirectController;
+    use App\Http\Controllers\ProfileController;
+    use App\Http\Controllers\RedirectController;
     use App\Http\Controllers\SearchController;
+
     use App\Http\Controllers\RegisterController;
+    use App\Http\Controllers\ResponseController;
     
     /* Route::get('/', function() {
         return view('welcome');
@@ -113,4 +115,12 @@ use App\Http\Controllers\RedirectController;
     // Task 6 — Input as JSON with validation:
     Route::get('/profile', [ProfileController::class, 'profile']);
     Route::post('/profile', [ProfileController::class, 'store']);
+
+
+    // Response lesson. Task 1
+    Route::get('/response/json', [ResponseController::class, 'json']);
+    Route::get('/response/view', [ResponseController::class, 'view']);
+    Route::get('/response/redirect', [ResponseController::class, 'redirect']);
+    Route::get('/response/download', [ResponseController::class, 'download']);
+
 ?>

@@ -11,6 +11,7 @@
 
     use App\Http\Controllers\RegisterController;
     use App\Http\Controllers\ResponseController;
+    use App\Http\Controllers\LoginformController;
     
     /* Route::get('/', function() {
         return view('welcome');
@@ -123,6 +124,11 @@
     Route::get('/response/redirect', [ResponseController::class, 'redirect']);
     Route::get('/response/download', [ResponseController::class, 'download']);
 
+    // Task 2 
     Route::get('/response/custom', [ResponseController::class, 'custom']);
 
+    // Task 3
+    Route::get('/loginform', [LoginformController::class, 'loginform']);
+    Route::post('/login', [LoginformController::class, 'login']);
+    Route::get('/dashboard', [LoginformController::class, 'dashboard']);
 ?>

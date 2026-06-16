@@ -3,6 +3,7 @@
     use App\Http\Controllers\ContactController;
     use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\Controller;
+    
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
     use App\Http\Controllers\ProfileController;
@@ -12,7 +13,8 @@
     use App\Http\Controllers\RegisterController;
     use App\Http\Controllers\ResponseController;
     use App\Http\Controllers\LoginformController;
-    
+    use App\Http\Controllers\UserController;
+
     /* Route::get('/', function() {
         return view('welcome');
     });
@@ -131,4 +133,9 @@
     Route::get('/loginform', [LoginformController::class, 'loginform']);
     Route::post('/login', [LoginformController::class, 'login']);
     Route::get('/dashboard', [LoginformController::class, 'dashboard']);
+
+    // Task 4
+    Route::get('/user/{name}', [UserController::class, 'user']);
+
+
 ?>

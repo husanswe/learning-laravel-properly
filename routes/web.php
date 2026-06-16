@@ -3,7 +3,7 @@
     use App\Http\Controllers\ContactController;
     use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\Controller;
-    
+
     use App\Http\Controllers\PageController;
     use App\Http\Controllers\PostController;
     use App\Http\Controllers\ProfileController;
@@ -14,6 +14,7 @@
     use App\Http\Controllers\ResponseController;
     use App\Http\Controllers\LoginformController;
     use App\Http\Controllers\UserController;
+    use App\Http\Controllers\ReportController;
 
     /* Route::get('/', function() {
         return view('welcome');
@@ -137,5 +138,6 @@
     // Task 4
     Route::get('/user/{name}', [UserController::class, 'user']);
 
-
+    //  Task 5 
+    Route::get('/report', [ReportController::class, 'report']);
 ?>

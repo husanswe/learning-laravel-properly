@@ -25,4 +25,9 @@ class ResponseController extends Controller
     {
         return response()->download(storage_path('app/sample.txt'));
     }
+
+    public function custom()
+    {
+        return response()->json(['message' => 'Created!'], 201)->header('X-App-Version', '1.0');
+    }
 }

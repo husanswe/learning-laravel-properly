@@ -123,4 +123,6 @@
     Route::get('/response/redirect', [ResponseController::class, 'redirect']);
     Route::get('/response/download', [ResponseController::class, 'download']);
 
+    Route::get('/response/custom', [ResponseController::class, 'custom']);
+
 ?>

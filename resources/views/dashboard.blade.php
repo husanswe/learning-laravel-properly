@@ -1,5 +1,3 @@
 @if (session('status'))
-    {{ session('all') }}
+    {{ session('status') }}
 @endif
-
-<h1>Welcome Admin!</h1>

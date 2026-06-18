@@ -153,4 +153,16 @@
     Route::get('/blade/age/{age}', function($age) {
         return view('blade.age', ['age' => $age]);
     });
+
+    // Task 3
+    Route::get('/blade/products', function() {
+        $products = [
+            ['name' => 'Laptop', 'price' => 1200],
+            ['name' => 'Mouse', 'price' => 100],
+            ['name' => 'Keyboard', 'price' => 200],
+            ['name' => 'Monitor', 'price' => 400],
+            ['name' => 'Headphones', 'price' => 200],
+        ];
+        return view('blade.products', ['products' => $products]);
+    });
 ?>

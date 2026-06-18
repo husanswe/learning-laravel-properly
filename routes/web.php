@@ -140,4 +140,12 @@
 
     //  Task 5 
     Route::get('/report', [ReportController::class, 'report']);
+
+
+    // Blade lesson. Task 1
+    Route::get('/blade/basics', function() {
+        return view('blade.basics', [
+            'name' => "<b>Husan<b>"
+        ]);
+    });
 ?>

@@ -148,4 +148,9 @@
             'name' => "<b>Husan<b>"
         ]);
     });
+
+    // Task 2. Conditionals
+    Route::get('/blade/age/{age}', function($age) {
+        return view('blade.age', ['age' => $age]);
+    });
 ?>

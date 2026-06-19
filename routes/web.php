@@ -169,4 +169,7 @@
     // Task 4
     Route::get('/home', fn() => view('home'));
     Route::get('/about', fn() => view('about'));
+
+    // Task 5
+    Route::view('/blade/cards', 'cards');
 ?>

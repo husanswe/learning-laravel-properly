@@ -165,4 +165,8 @@
         ];
         return view('blade.products', ['products' => $products]);
     });
+
+    // Task 4
+    Route::get('/home', fn() => view('home'));
+    Route::get('/about', fn() => view('about'));
 ?>

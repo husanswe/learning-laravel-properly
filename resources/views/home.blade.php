@@ -1,15 +1,7 @@
-<h1>Lorem ipsum dolor sit amet!</h1>
-
 @extends('layouts.app')
 
+@section('title', 'Home')
+
 @section('content')
-    <h1>Welcome to lorem ipsum</h1>
-
-    <x-alert color="red">
-        This is a warning!
-    </x-alert>
-
-    <x-alert color="green">
-        Success!
-    </x-alert>
+    <h1>Welcome to Home page!</h1>
 @endsection
